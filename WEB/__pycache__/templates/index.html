@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modelo de predicción EEERR</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+<body>
+    <h1>Modelo de predicción</h1>
+    <form method="POST" action="/predict">
+        <label for="gender">Genero:</label>
+        <select name="gender" id="gender">
+            <option value="0">Masculino</option>
+            <option value="1">Femenino</option>
+            <option value="2">Otro</option>
+        </select><br>
+
+        <label for="age">Edad:</label>
+        <input type="text" name="age" id="age"><br>
+
+        <label for="hypertension">¿Sufre hipertensión?</label>
+        <select name="hypertension" id="heart_disease">
+            <option value="0">NO</option>
+            <option value="1">SI</option>
+        </select><br>
+
+        <label for="heart_disease">¿Presenta Antecedentes Cardíacos?</label>
+        <select name="heart_disease" id="heart_disease">
+            <option value="0">NO</option>
+            <option value="1">SI</option>
+        </select><br>
+
+        <label for="ever_married">Estado Civil</label>
+        <select name="ever_married" id="ever_married">
+            <option value="0">Soltero</option>
+            <option value="1">Casado</option>
+        </select><br>
+
+        <label for="work_type">Área de Empleo</label>
+        <select name="work_type" id="work_type">
+            <option value="0">No trabaja</option>
+            <option value="1">Rubro relacionado con Niños</option>
+            <option value="2">Sistema Público</option>
+            <option value="3">Sistema Privado</option>
+            <option value="4">Trabajador Independiente</option>
+        </select><br>
+
+        <label for="residence_type">Zona donde reside</label>
+        <select name="residence_type" id="residence_type">
+            <option value="0">Zona Urbana</option>
+            <option value="1">Zona Rural</option>
+        </select><br>
+
+        <label for="avg_glucose_level">Indique Nivel de Glucosa (mg/dL):</label>
+        <input type="text" name="avg_glucose_level" id="avg_glucose_level"><br>
+
+        <label for="bmi">Indique IMC:</label>
+        <input type="text" name="bmi" id="bmi"><br>
+
+        <label for="smoking_status">Estado de Fumador:</label>
+        <select name="smoking_status" id="smoking_status">
+            <option value="0">No Fuma</option>
+            <option value="1">Fumador</option>
+            <option value="2">No se sabe</option>
+            <option value="3">Dejo de Fumar</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
